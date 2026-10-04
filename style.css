@@ -832,3 +832,23 @@ html {
         width: 100%;
         max-width: 100%;
     }
+
+    /* Navbar Mobile Text-Wrap Fix */
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap; /* Allows overflowing links to wrap to the next line */
+        justify-content: center;
+        gap: 8px 12px; /* Smaller row/column gaps */
+        padding: 0 10px;
+        margin: 5px 0 0 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-links li a {
+        font-size: 0.75rem; /* Slightly smaller font size to fit comfortably */
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+    }
+}
