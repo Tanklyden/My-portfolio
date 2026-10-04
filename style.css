@@ -852,3 +852,24 @@ html {
         white-space: nowrap;
     }
 }
+    /* Mobile Video Gallery Fix */
+@media (max-width: 768px) {
+    /* Stack video cards vertically */
+    .video-gallery {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        width: 100% !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Make video players full width with natural 16:9 aspect ratio */
+    .video-gallery video {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9 !important;
+        object-fit: cover !important;
+        border-radius: 8px !important;
+    }
+}
