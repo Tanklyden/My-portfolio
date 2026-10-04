@@ -773,3 +773,62 @@ html {
         display: flex;
         justify-content: center;
     }
+    /* Clean Mobile Layout Fix */
+@media (max-width: 768px) {
+    /* Prevent side-scrolling overflow */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Clean Navbar layout */
+    .top-navbar {
+        position: relative;
+        width: 100%;
+        background: transparent; /* Removes dark blocking overlay */
+        padding: 15px 10px;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        background: transparent;
+    }
+
+    .nav-logo {
+        font-size: 1.1rem;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links li a {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    /* Fix service cards grid overflow on small screens */
+    .services-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 100%;
+    }
